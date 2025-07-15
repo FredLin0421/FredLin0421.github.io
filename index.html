@@ -1,377 +1,60 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Portfolio</title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fred Lin • Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div id="mobile-menu-open" class="shadow-large">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>
-    <!-- End #mobile-menu-toggle -->
-    <header>
-        <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-        <ul id="menu" class="shadow">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </header>
-    <!-- End header -->
 
-    <div id="lead">
-        <div id="lead-content">
-            <h1>Jui-Te(Fred) Lin</h1>
-            <h2>Robotics & Optimization & Design & Mechatronics</h2>
-            
-        </div>
-        <!-- End #lead-content -->
+<header>
+  <div class="container">
+    <img src="assets/profile.jpg" alt="Fred Lin">
+    <h1>Fred (Jui‑Te) Lin, Ph.D.</h1>
+    <p>Robotics for Medical Intervention & Industrial Automation</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#resume">Resume</a>
+      <a href="#projects">Research & Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-        <div id="lead-overlay"></div>
+<section id="about" class="section">
+  <h2>About</h2>
+  <p>Ph.D. in Robotics for Medical Intervention and Industrial Automation, focusing on design, manufacturing, control, and user interfaces.</p>
+</section>
 
-        <div id="lead-down">
-            <span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </span>
-        </div>
-        <!-- End #lead-down -->
-    </div>
-    <!-- End #lead -->
+<section id="resume" class="section">
+  <h2>Resume</h2>
+  <ul>
+    <li><strong>Email:</strong> jul024@ucsd.edu</li>
+    <li><strong>Phone:</strong> +1 313‑417‑6945</li>
+    <!-- Add more resume details here -->
+  </ul>
+</section>
 
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                        I'm a second year master student in Mechanical Engineering at University of California, San Diego. I've joined Morimoto Lab since 2018 and advised by Prof. Tania Morimoto. My research area includes surgical robotics (Concentric tube robots) and laparoscopic training system.
-                        I'm currently working on designing a dual-arm concentric tube robot for autonomous suturing. My works focus on optimization for the robot design and motion planning, robot simulation for suturing task share conrol stretegies, control inputs design. 
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End #about -->
+<section id="projects" class="section">
+  <h2>Research & Projects</h2>
+  <ul>
+    <li><strong>Dr. DNA (April 2024)</strong>: Combating silent data corruption in deep learning using neuron activation distributions.</li>
+    <li><strong>Recommendation Systems & Hardware Faults (Dec 2023)</strong>: Robustness evaluation in large‑scale HW environments.</li>
+    <li><strong>GNN Resilience (Dec 2022)</strong>: Fault tolerance analysis and mitigation in graphs.</li>
+    <!-- Add more project items -->
+  </ul>
+  <p>See my <a href="https://www.researchgate.net/" target="_blank">publications on ResearchGate</a>.</p>
+</section>
 
-    <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
-        <div id="experience-timeline">
-            <div data-date="September 2019 – present">
-                <h3>Morimoto Lab, University of California, San Diego</h3>
-                <h4>Concentric Tube Robots: Task Oriented Optimization of Tube Parameters and Motion Planning </h4>
-                <h5>Prof.Tania Morimoto & Prof.JT Hwang</h5>
-                <p>
-                    <li>
-                        Developing a shared control strategy between the operator and the robot for autonomous suturing
-                    </li>
-                    <li>
-                        Optimized the joint values and tube parameters of concentric tube robot for suturing task
-                    </li>
-                    <li>
-                        Successfully implemented in OpenMDAO and were able to solve a large-scale optimization problem
-                    </li>
-                </p>
-            </div>
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <p>Email me at <a href="mailto:jul024@ucsd.edu">jul024@ucsd.edu</a> or call <strong>+1 313‑417‑6945</strong>.</p>
+</section>
 
-            <div data-date="June 2019 – December 2019">
-                <h3>ViaTouch media Inc.</h3>
-                <h4>Mechanical & QA/QC Engineering Intern</h4>
-                <p>
-                    <li>
-                        Performed data analytic on sensors (strain guages) and improved the control strategy of our vending machine
-                    </li>
-                    <li>
-                        Designed prototypes for the R&D team, to prove of concept for the new features
-                    </li>
-                    <li>
-                        Participated in research and contributed in the initial efforts for setting up a test apparatus for computer vision application
-                    </li>
-                </p>
-            </div>
+<footer>
+  <p>© 2025 Fred Lin</p>
+</footer>
 
-            <div data-date="September 2018 – June 2019">
-                <h3>Morimoto Lab, University of California, San Diego</h3>
-                <h4>Developed a Low-Cost System for Laparoscopic Skills Training, advised by Prof. Tania Morimoto</h4>
-                <h5>Prof.Tania Morimoto</h5>
-                <p>
-                    <li>
-                        Designed customized laparoscopic instrument as an input device for video games
-                    </li>
-                    <li>
-                        Integrated the electromechanical system ( mechanical parts and variety of sensors) to mimic the environment of laparoscopic surgery
-                    </li>
-                    <li>
-                        Performed a user study and demonstrated that training with the system can lead to significant improvement in laparoscopic skills
-                    </li>
-                </p>
-            </div>
-
-            <div data-date="April 2018 – June 2018">
-                <h3>Taiwan Colour & Imaging Technology Corporation</h3>
-                <h4>Field Engineer</h4>
-                <p>
-                    <li>
-                        Field testing, problem analysis and led a team of 2 to install over 200 face recognition machines
-                    </li>
-                    <li>
-                        Diagnosed and adjusted the machine parameter to improve the face recognition accuracy in the field
-                    </li>
-                </p>
-            </div>
-
-            <div data-date="October 2015 – September 2016">
-                <h3>Robotics and machine vision Lab, Tamkang University</h3>
-                <h4>Palletizing Robot Design (Industrial Robot) </h4>
-                <h5>Prof.Yin-Tien Wang</h5>
-
-                <p>
-                    <li>
-                        Robot control, motion planning and grasping
-                    </li>
-                    <li>
-                        Designed and integrated the mechanical and electronics for the robot
-                    </li>
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- End #experience -->
-
-    <div id="education">
-        <h2 class="heading">Education</h2>
-        <div class="education-block">
-            <h3>University of California, San Diego</h3>
-            <span class="education-date">Sept 2019 - June 2020</span>
-            <h4>M.S. in Mechanical Engineering</h4>
-            <ul>
-                <li>
-                    Average GPA: 3.68/4.0
-                </li>
-                <li>
-                    Grader: MAE 204 (Robotics), MAE 108 (Probability & Statistical methods for Mechanical Engineering)
-                </li>
-                <li>
-                    Sensing & Estimation Robotics, Robotics, Multidisciplinary optimization, Healthcare robotics, Linear system theory
-                </li>
-            </ul>
-        </div>
-        <!-- End .education-block -->
-
-        <div class="education-block">
-            <h3>Tamakang University</h3>
-            <span class="education-date">Sept 2016 - Sept 2017</span>
-            <h4>B.S. in Mechanical and Electro-Mechanical Engineering</h4>
-            <ul>
-                <li>
-                    Average GPA: 3.79/4.0
-                </li>
-                <li>
-                    Courses: Applied mechanics, Mechanism, Mechatronics, Control system, Strength of materials, Analysis of Dynamic system
-                </li>
-            </ul>
-        </div>
-        <!-- End .education-block -->
-    </div>
-    <!-- End #education -->
-
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        <div class="container">
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Concentric Tube Robots: Task Oriented Optimization of Tube Parameters and Motion Planning </h3>
-                        <p>
-                            Concentric tube robots are continuum robots that comprise of nested super-elastic tubes. The elastic interactions between the tubes allow a concentric tube robot to attain snake like motion, making the robot feasible for medical applications. These types of robots can potentially be used for complex tasks like suturing in hard to reach small spaces because of the flexibility, small size, and dexterity these robots exhibit. 
-                        </p>
-                        <a href="https://github.com/FredLin0421/ConcentricTubeRobot">View Project</a>
-                            
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <!-- <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div> -->
-                    <!-- End .project-image -->
-                    <!-- <div class="project-info">
-                        <h3>Path Planning for suturing task </h3>
-                        <p>
-                            In order to develop an autonomous suturing robot system, it is neccessary to define an entire suturing path for the concentric tube robots which will be used in our case. Suturing task is one of the most challenging task in the surgery. We think there is a need to provide a tool to plan the path which depends on wound size, needle size, workspace, etc.  
-                        </p>
-                        <a href="https://github.com/FredLin0421/Pathplanning_suturing">View Project</a>
-                    </div> -->
-                    <!-- End .project-info -->
-                <!-- </div> -->
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/laparoscopic_re.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Developed a Low-Cost System for Laparoscopic Skills Training</h3>
-                        <p>
-                            The current state of surgical education includes animate models, inanimatephysical models, and computer-based simulations, the latter of which are limited by cost, accessibility, and a lack of engagement. We develpoed a low cost system for laparoscopic training and proven that it can significantly improve user's skill by only a 30 min training session.  
-                        </p>
-                        <a href="https://github.com/FredLin0421/Laparoscopic_trainingsystem">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/haptic_re.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Soft Social Haptics: Recreating Human Touch Sensations using Soft Materials and Pneumatics</h3>
-                        <p>
-                            Social interaction over long distances is primarily dictated using visual and audio devices. However, touch is an essential method for communicating emotions between individuals. We present a device that can replicate common human touch sensations (i.e. patting, stroking, and poking) using soft materials and pneumatics. 
-                        </p>
-                        <a href="https://github.com/FredLin0421/SoftSocial_Haptics">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/palletizing_re.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Palletizing Robot Design (Industrial Robot)</h3>
-                        <p>
-                            Industrial palletizing robot are widely used in the industry because of the high precision, wide payload range and the high performance. We designed a 4-axis palletizing robot to attend Taiwan Robot Competition in 2016 and awarded 2nd place among 30 teams in the nation.     
-                        </p>
-                        <a href="https://github.com/FredLin0421/PalletizingRobot">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-            </div>
-        </div>
-    </div>
-    <!-- End #projects -->
-
-    <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>Matlab</li>
-            <li>OpenMDAO</li>
-            <li>V-REP</li>
-            <li>SolidWorks</li>
-            <li>AutoCAD</li>
-            <li>Linux system</li>
-            <li>Arduino</li>
-            <li>3D-Printer</li>
-            <li>Machine shop</li>
-            <li>Raspberry Pi</li>
-            <li>NVIDIA Jetson Nano</li>
-
-            
-        </ul>
-    </div>
-    <!-- End #skills -->
-
-    <div id="contact">
-        <h2>Get in Touch</h2>
-        <div id="contact-form">
-            <form method="POST" action="https://formspree.io/email@email.com">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-        <!-- End #contact-form -->
-    </div>
-    <!-- End #contact -->
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>
-                        Copyright &copy; 2017 YOUR NAME
-                    </p>
-                </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
-                </div>
-                <div class="col-sm-5 social">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- End footer -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
 </body>
-
 </html>
