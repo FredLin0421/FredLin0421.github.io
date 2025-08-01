@@ -555,3 +555,194 @@ body {
     min-width: 0;
   }
 }
+
+/* Skills Network Section */
+.skills-network {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin: 60px auto;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(24,49,83,0.2) 0%, rgba(10,25,47,0.05) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(29,233,182,0.1);
+}
+
+.skill-node {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform-origin: center;
+  z-index: 10;
+  border: 2px solid rgba(255,255,255,0.1);
+}
+
+.skill-node:hover {
+  transform: scale(1.3);
+  z-index: 20;
+  border-color: rgba(255,255,255,0.3);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+}
+
+.skill-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  line-height: 1.2;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+.skill-tooltip {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(10,25,47,0.98);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  z-index: 30;
+  border: 1px solid var(--accent);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+}
+
+.skill-node:hover .skill-tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-5px);
+}
+
+/* Category Colors */
+.skill-node[data-category="Programming"] {
+  background: linear-gradient(135deg, #1DE9B6, #00BFAE);
+  box-shadow: 0 4px 20px rgba(29,233,182,0.4);
+}
+
+.skill-node[data-category="Robotics"] {
+  background: linear-gradient(135deg, #FF6B6B, #FF5252);
+  box-shadow: 0 4px 20px rgba(255,107,107,0.4);
+}
+
+.skill-node[data-category="AI/ML"] {
+  background: linear-gradient(135deg, #4ECDC4, #44A08D);
+  box-shadow: 0 4px 20px rgba(78,205,196,0.4);
+}
+
+.skill-node[data-category="Tools"] {
+  background: linear-gradient(135deg, #A8E6CF, #88D8C0);
+  box-shadow: 0 4px 20px rgba(168,230,207,0.4);
+}
+
+.skill-node[data-category="Design"] {
+  background: linear-gradient(135deg, #FFD93D, #FFC300);
+  box-shadow: 0 4px 20px rgba(255,217,61,0.4);
+}
+
+.skill-node[data-category="Web"] {
+  background: linear-gradient(135deg, #6C5CE7, #5F3DC4);
+  box-shadow: 0 4px 20px rgba(108,92,231,0.4);
+}
+
+/* Perfect circular positioning using transforms */
+.skill-node:nth-child(1) { top: 50%; left: 50%; transform: translate(-50%, -50%) translate(0px, -200px); }
+.skill-node:nth-child(2) { top: 50%; left: 50%; transform: translate(-50%, -50%) translate(173px, -100px); }
+.skill-node:nth-child(3) { top: 50%; left: 50%; transform: translate(-50%, -50%) translate(200px, 0px); }
+.skill-node:nth-child(4) { top: 50%; left: 50%; transform: translate(-50%, -50%) translate(173px, 100px); }
+.skill-node:nth-child(5) { top: 50%; left: 50%; transform: translate(-50%, -50%) translate(100px, 173px); }
+.skill-node:nth-child(6) { top: 50%; left: 50%; transform: translate(-50%, -50%) translate(0px, 200px); }
+.skill-node:nth-child(7) { top: 50%; left: 50%; transform: translate(-50%, -50%) translate(-100px, 173px); }
+.skill-node:nth-child(8) { top: 50%; left: 50%; transform: translate(-50%, -50%) translate(-173px, 100px); }
+.skill-node:nth-child(9) { top: 50%; left: 50%; transform: translate(-50%, -50%) translate(-200px, 0px); }
+.skill-node:nth-child(10) { top: 50%; left: 50%; transform: translate(-50%, -50%) translate(-173px, -100px); }
+.skill-node:nth-child(11) { top: 50%; left: 50%; transform: translate(-50%, -50%) translate(-100px, -173px); }
+.skill-node:nth-child(12) { top: 50%; left: 50%; transform: translate(-50%, -50%) translate(100px, -173px); }
+
+/* Skills Legend */
+.skills-legend {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #bfc6d1;
+  font-size: 0.9rem;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: rgba(10,25,47,0.3);
+  border: 1px solid rgba(29,233,182,0.2);
+}
+
+.legend-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.legend-color.programming { background: linear-gradient(135deg, #1DE9B6, #00BFAE); }
+.legend-color.robotics { background: linear-gradient(135deg, #FF6B6B, #FF5252); }
+.legend-color.ai-ml { background: linear-gradient(135deg, #4ECDC4, #44A08D); }
+.legend-color.tools { background: linear-gradient(135deg, #A8E6CF, #88D8C0); }
+.legend-color.design { background: linear-gradient(135deg, #FFD93D, #FFC300); }
+.legend-color.web { background: linear-gradient(135deg, #6C5CE7, #5F3DC4); }
+
+/* Responsive Design for Skills Network */
+@media (max-width: 700px) {
+  .skills-network {
+    width: 450px;
+    height: 450px;
+    margin: 40px auto;
+  }
+  
+  .skill-node {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .skill-name {
+    font-size: 0.75rem;
+  }
+  
+  .skills-legend {
+    gap: 16px;
+  }
+  
+  .legend-item {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .skills-network {
+    width: 350px;
+    height: 350px;
+  }
+  
+  .skill-node {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .skill-name {
+    font-size: 0.65rem;
+  }
+}
